@@ -1,0 +1,26 @@
+models:
+0 - Cliente:
+  - nome
+  - sobrenome
+  - cpf
+  - conta
+
+1 - Conta:
+  - agencia
+  - numero
+  - digito
+  - saldo
+  - transacao
+  - TemSaldo(bool)
+  
+2 - TipoTransacao:
+   - deposito
+   - retirada
+   - pagamento
+
+3 - Transacao:
+  - TipoTransacao
+  - valor
+  - data
+  - descricao
+  - conta
